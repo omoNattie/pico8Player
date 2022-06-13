@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="decors.css">
+    <link rel="icon" href="./images/assets/p8.png" type="image/x-icon"/>
+    <title>Nattie's Pico8 Player</title>
+</head>
+<body>
+<div id="main">
+    <div class="top">
+        <a href="https://www.lexaloffle.com/bbs/?cat=7#sub=2&mode=carts&orderby=featured" target="_blank">
+            <img src="./images/assets/logo.png" alt="death" class="btn-logo"/>
+        </a>
+    </div>
+
+    <div class="form">
+        <form>
+            <input type="text" placeholder="link here..." id="link-n" class="form-link" name="link-n"/>
+            <button onclick="find(this);" type="Button" class="btn-submit">Play!</button>
+        </form>
+    </div>
+
+    <div class="game">
+        <iframe src="https://www.lexaloffle.com/bbs/widget.php?pid=15133" scrolling="no" style=" width: 25rem; height: 22.5rem; border: none; overflow: hidden; display: flex; left: 5%; right: 0;" id="p8game" allowfullscreen></iframe>
+    </div>
+
+    <div class="button">
+        <a href="#about">
+            <img src="./images/assets/down-arrow.png" class="arrow"/>
+        </a>
+    </div>
+</div>
+    <div id="about">
+        <h1 class="header">Confused on what to do?</h1><br>
+        <p>Simply press the bottom on the top left! You'll find yourself on the featured page of the lexaloffle site!</p>
+        <p>Now, find a game that seems interesting to you! Once you've found the game, simply press embed and copy the link inside the "src" field.</p>
+        <img src="./images/tutorials/tutorial.png"/>
+        <p>After you've copied the link, paste it into the field on the bottom right, press play, and you're done!</p>
+        <h2 class="header">Have fun with pico8!</h2>
+        <a href="#main">
+            <img src="./images/assets/down-arrow.png" class="arrow_up"/>
+        </a>
+    </div>
+
+    <img src="./images/tutorials/inputs.png" class="inputs"/>
+    <script src="script.js"></script>
+</body>
+</html>
